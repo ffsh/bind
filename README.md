@@ -5,7 +5,7 @@ Einstellungen für DNS auf den Gateways
 
 
 Anleitung:
-
+```
 useradd -m -s /bin/bash dnsbind
 
 su - dnsbind
@@ -39,3 +39,4 @@ zone "lauenburg.freifunk.net" {
         type master;
         file "/etc/bind/db.net.freifunk.lauenburg";
 };
+```
