@@ -1,0 +1,42 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    900
+$ORIGIN freifunk-badoldesloe.de.
+@       IN      SOA     ns3.nsentry.de. info.freifunk-badoldesloe.de. (
+                     2016083001         ; Serial
+                          28800         ; Refresh
+                           7200         ; Retry
+                         604800         ; Expire
+                            900 )       ; Negative Cache TTL
+
+;; Authorative Nameserver
+				NS	ns3.nsentry.de.
+				NS	ns4.nsentry.de.
+
+freifunk-badoldesloe.de.                IN      A       136.243.202.90
+www                IN      A       136.243.202.90
+
+;; Update
+firmware                IN      A       10.144.0.112
+               IN      AAAA    fddf:bf7:80::dead:112
+update                CNAME      firmware
+
+;; NTP Service
+ntp                     IN      AAAA    fddf:bf7:80::dead:112
+
+;; FF Map
+map                     IN      A       10.144.0.13
+                        IN      AAAA    fddf:0bf7:80::a38:13
+
+;; Knoten
+knoten                  IN      AAAA    fddf:0bf7:80::a38:1
+node        CNAME 	knoten
+next        CNAME 	knoten
+router        CNAME 	knoten
+
+;; Gateways
+;;bille                   IN      A       88.198.243.190
+krummbach                   IN      A       136.243.202.89
+;;trave                   IN      A       88.198.243.186
+;;viehbach                   IN      A       136.243.202.88

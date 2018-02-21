@@ -1,0 +1,62 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    900
+$ORIGIN reinbek.freifunk.net.
+@       IN      SOA     ns3.nsentry.de. info.reinbek.freifunk.net. (
+                     2016022401         ; Serial
+                          28800         ; Refresh
+                           7200         ; Retry
+                         604800         ; Expire
+                            900 )       ; Negative Cache TTL
+
+;; Authorative Nameserver
+				NS	ns3.nsentry.de.
+				NS	ns4.nsentry.de.
+
+reinbek.freifunk.net.                IN      A       5.9.111.92
+www                IN      A       5.9.111.92
+
+;; Update
+firmware                IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+futro IN AAAA fddf:bf7:80::a38:2
+update                IN      AAAA    fddf:0bf7:80::a38:2
+
+;; NTP Service
+ntp                     IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; FF Map
+map                     IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+maprz                       IN A 10.144.0.2
+
+;; Knoten
+knoten                  IN      AAAA    fddf:0bf7:80::a38:1
+node        CNAME 	knoten
+next        CNAME 	knoten
+router        CNAME 	knoten
+
+;; FF ts
+ts                      IN      A       10.144.0.2
+                        IN      AAAA    fddf:0bf7:80::a38:2
+
+;; Gateways
+barnitz                 IN      A       37.120.163.174
+beste                   IN      A       5.9.111.91
+bille                   IN      A       88.198.243.190
+trave                   IN      A       88.198.243.186
+
+;; Mail
+mail                      IN      A       5.9.111.92
+                        IN      MX    10 mail.reinbek.freifunk.net.
+
+;; all other
+prosody                   IN      A       10.144.1.3
+refugeereinbek            IN      A       10.144.1.3
+seafile                   IN      A       10.144.1.3
+
+;; Eigene bzw Individuelle Dienste
+$ORIGIN mein.reinbek.freifunk.net.
+;;jabber                IN      A       10.144.1.3

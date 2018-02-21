@@ -1,0 +1,63 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    900
+$ORIGIN freifunk-lauenburg.de.
+@       IN      SOA     ns1.wollgast-it.de. info.freifunk-lauenburg.de. (
+                     2018021001         ; Serial
+                          28800         ; Refresh
+                           7200         ; Retry
+                         604800         ; Expire
+                            900 )       ; Negative Cache TTL
+
+;;ACHTUNG, Dies ist nur ein Hotpatch!!!	//swo 10.2.2018
+
+;; Authorative Nameserver
+				NS	ns1.wollgast-it.de.
+				NS	ns0.wollgast-it.de.
+				
+@			IN	A	176.9.83.62
+@			IN	AAAA	fddf:bf7:80::128:1
+
+www			IN	A	176.9.83.62
+www			IN	AAAA	fddf:bf7:80::128:1
+
+;; Update
+firmware		IN	A	10.144.128.1
+firmware		IN	AAAA	fddf:0bf7:80::128:1
+
+;; NTP Service
+ntp			IN	A	10.144.128.1
+ntp			IN	AAAA	fddf:0bf7:80::128:1
+
+;; FF Map
+map			IN	A	10.144.1.7
+map			IN	AAAA	fddf:0bf7:80::129:1
+
+;; Knoten
+knoten			IN	AAAA	fddf:0bf7:80::128:1
+node			CNAME	knoten
+next			CNAME	knoten
+router			CNAME	knoten
+
+;;Mail
+;;mail			IN      A       88.198.243.188
+;;			IN      MX    10 mail.freifunk-lauenburg.de.
+
+;; Gateways
+bille			IN	A	88.198.243.190
+trave			IN	A	88.198.243.186
+hopfenbach		IN	A	176.9.83.62
+krummbach		IN	A	176.9.202.72
+viehbach		IN	A	176.9.202.73
+
+
+;; all other
+;;beispiel		IN	A	10.144.1.3
+
+;; Eigene bzw Individuelle Dienste
+;;$ORIGIN mein.freifunk-lauenburg.de.
+;;beispiel		IN	A	10.144.1.3
+
+;;Seafile Server
+;;seafile		IN	A	10.144.1.6	
