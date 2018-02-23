@@ -10,7 +10,7 @@ useradd -m -s /bin/bash dnsbind
 
 su - dnsbind
 
-git clone https://github.com/ffod/bind.git
+git clone https://github.com/ffsh/bind.git
 
 chmod +x bind/update*
 
@@ -18,6 +18,7 @@ exit
 
 */15 * * * * root /home/dnsbind/bind/updatestofrei.sh > /dev/null 2>&1
 */15 * * * * root /home/dnsbind/bind/updatelauen.sh > /dev/null 2>&1
+*/15 * * * * root /home/dnsbind/bind/updateffsh.sh > /dev/null 2>&1
 
 
 Einträge für default Zones:
@@ -38,5 +39,10 @@ zone "freifunk-lauenburg.de" {
 zone "lauenburg.freifunk.net" {
         type master;
         file "/etc/bind/db.net.freifunk.lauenburg";
+};
+
+zone "freifunk-suedholstein.de" {
+        type master;
+        file "/etc/bind/db.de.freifunk-suedholstein";
 };
 ```
