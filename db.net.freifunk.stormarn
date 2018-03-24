@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2018021801         ; Serial
+                     2018032401         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -18,22 +18,18 @@ www     IN      A       176.9.202.78
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80:0:8e89:a5ff:fe1f:5514
-;;gluon          IN      AAAA    fddf:bf7:80::dead:112
-;;gluonrz		IN      AAAA    fddf:bf7:80::dead:112
 
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80:0:8e89:a5ff:fe1f:5514
 
 ;; FF Map
 map                     IN      AAAA    fddf:0bf7:80::a38:13
-;;maprz                   IN      AAAA    fddf:0bf7:80::a38:13
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
 next        CNAME 	knoten
 router        CNAME 	knoten
-
 
 
 ;; Gateways
@@ -46,6 +42,5 @@ viehbach                   IN      A       176.9.202.73
 ;; all other
 ;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
 ;;$ORIGIN stormarn.freifunk.net.
-;;media-1                IN      AAAA       fddf:0bf7:80::a38:1
-grotax                  IN      AAAA     fddf:bf7:80::222:1
+;;name                IN      AAAA       fddf:0bf7:80::a38:1
  
