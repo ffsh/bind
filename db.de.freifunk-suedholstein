@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2018032601         ; Serial
+                     2018032602         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -30,7 +30,7 @@ knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
 
 ;;Tiles
-tiles			IN	AAAA	fddf:0bf7:80::128:1
+tiles			IN	AAAA	fddf:0bf7:80::129:1
 
 ;; Gateways
 barnitz			IN	A	195.201.117.146
