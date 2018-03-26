@@ -29,6 +29,9 @@ map                     IN      AAAA    fddf:0bf7:80::128:1
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
 
+;;Tiles
+tiles			IN	AAAA	fddf:0bf7:80::128:1
+
 ;; Gateways
 barnitz			IN	A	195.201.117.146
 beste			IN	A	88.99.35.208
