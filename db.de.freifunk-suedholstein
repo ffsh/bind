@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2018032604         ; Serial
+                     2018032801         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,8 +13,8 @@ $ORIGIN freifunk-suedholstein.de.
 @		IN		NS	ns3.nsentry.de.
 		IN		NS	ns4.nsentry.de.
 		IN      MX      10 tux.tuks.in.
-		IN      A       176.9.202.78
-www     IN      A       176.9.202.78
+		IN      A       176.9.202.74
+www     IN      A       176.9.202.74
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80::144:1
