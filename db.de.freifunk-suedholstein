@@ -26,16 +26,16 @@ dev			IN	AAAA	fddf:bf7:80::222:2
 ntp                     IN      AAAA    fddf:bf7:80::144:1
 
 ;; FF Map
-map                     IN      AAAA    fddf:0bf7:80::129:1
-			IN	A	10.144.1.7
+map                     IN      AAAA    fddf:0bf7:80::128:1
+			IN	A	10.144.128.1
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node        CNAME 	knoten
 
 ;;Tiles
-tiles			IN	AAAA	fddf:0bf7:80::129:1
-			IN	A	10.144.1.7
+tiles			IN	AAAA	fddf:0bf7:80::128:1
+			IN	A	10.144.128.1
 
 
 ;; Gateways
