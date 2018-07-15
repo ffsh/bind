@@ -14,8 +14,10 @@ $ORIGIN freifunk-suedholstein.de.
                         IN      NS      feuerschiff.leichsenring.net.
                         IN      NS      ns0.wollgast-it.de.
                         IN      MX  10  freifunk-suedholstein.de.
-                        IN      A       46.4.149.26
-www                     IN      A       46.4.149.26
+                        IN      A       10.144.144.1
+                        IN      AAAA    fddf:0bf7:80::144:1
+www                     IN      A       10.144.144.1
+                        IN      AAAA    fddf:0bf7:80::144:1
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80::144:1
