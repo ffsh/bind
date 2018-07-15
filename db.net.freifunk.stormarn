@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2018041501         ; Serial
+                     2018071501         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
