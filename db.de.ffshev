@@ -1,0 +1,62 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    900
+$ORIGIN ffshev.de.
+@       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
+                     2018082401         ; Serial
+                          28800         ; Refresh
+                           7200         ; Retry
+                         604800         ; Expire
+                            900 )       ; Negative Cache TTL
+
+@                       IN      NS      ns1.jebens.it.
+                        IN      NS      feuerschiff.leichsenring.net.
+                        IN      NS      ns0.wollgast-it.de.
+                        IN      MX  10  freifunk-suedholstein.de.
+                        IN      A       46.4.149.26
+                        IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
+www                     IN      A       46.4.149.26
+                        IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
+
+;; Update and Firmware Repo
+firmware                IN      AAAA    fddf:bf7:80::144:1
+fw                      IN      AAAA    fddf:bf7:80::144:1
+;; firmware dev - grotax
+dev                     IN      AAAA    fddf:bf7:80::222:2
+
+;; NTP Service
+ntp                     IN      AAAA    fddf:bf7:80::144:1
+
+;; FF Map
+map                     IN      AAAA    fddf:0bf7:80::128:1
+                        IN      A       10.144.128.1
+
+;; Knoten
+knoten                  IN      AAAA    fddf:0bf7:80::a38:1
+node                    CNAME           knoten
+
+;;Tiles
+tiles                   IN      AAAA    fddf:0bf7:80::128:1
+                        IN      A       10.144.128.1
+
+
+;; Gateways
+barnitz                 IN      A       195.201.117.146
+beste                   IN      A       88.99.35.208
+;;bille                 IN      A       1.2.3.4
+;;brunsbach             IN      A       1.2.3.4
+;;heilsau               IN      A       1.2.3.4
+hopfenbach              IN      A       176.9.83.62
+krummbach               IN      A       46.4.149.24
+;;piepenbek             IN      A       1.2.3.4
+;;strusbek              IN      A       1.2.3.4
+;;syslbek               IN      A       1.2.3.4
+trave                   IN      A       88.99.86.15
+viehbach                IN      A       46.4.149.25
+
+;; all other
+;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
+;;$ORIGIN freifunk-suedholstein.de.
+;;media                IN      AAAA       fddf:0bf7:80::a38:1
+
