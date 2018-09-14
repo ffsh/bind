@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2018071501         ; Serial
+                     2018091401         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -38,6 +38,8 @@ node                    CNAME           knoten
 ;;Tiles
 tiles                   IN      AAAA    fddf:0bf7:80::128:1
                         IN      A       10.144.128.1
+                        
+kontakt                 IN      A       46.4.149.31                        
 
 
 ;; Gateways
