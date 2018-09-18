@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2018082401         ; Serial
+                     2018091801         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -21,7 +21,7 @@ www                     IN      A       46.4.149.26
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80::144:1
-fw                      IN      AAAA    fddf:bf7:80::144:1
+fw                      IN      AAAA    fddf:0bf7:80::128:1
 ;; firmware dev - grotax
 dev                     IN      AAAA    fddf:bf7:80::222:2
 
