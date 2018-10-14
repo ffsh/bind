@@ -35,12 +35,14 @@ map                     IN      AAAA    fddf:0bf7:80::128:1
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
 
-;;Tiles
+;; Tiles
 tiles                   IN      AAAA    fddf:0bf7:80::128:1
                         IN      A       10.144.128.1
-                        
+;; Ticket-System                       
 kontakt                 IN      A       46.4.149.31                        
 
+;; Docs
+docs                    IN      CNAME   readthedocs.io.
 
 ;; Gateways
 barnitz                 IN      A       195.201.117.146
