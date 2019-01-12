@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2018091801         ; Serial
+                     2019011200         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -12,7 +12,7 @@ $ORIGIN ffshev.de.
 
 @                       IN      NS      ns1.jebens.it.
                         IN      NS      feuerschiff.leichsenring.net.
-                        IN      NS      ns0.wollgast-it.de.
+                        IN      NS      ns2.wollgast-it.de.
                         IN      MX  10  freifunk-suedholstein.de.
                         IN      A       46.4.149.26
                         IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
@@ -20,7 +20,7 @@ www                     IN      A       46.4.149.26
                         IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
 
 ;; Update and Firmware Repo
-firmware                IN      AAAA    fddf:bf7:80::144:1
+firmware                IN      AAAA    fddf:bf7:80::128:1
 fw                      IN      AAAA    fddf:0bf7:80::128:1
 ;; firmware dev - grotax
 dev                     IN      AAAA    fddf:bf7:80::222:2
