@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2019011300         ; Serial
+                     2019011301         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -28,6 +28,13 @@ dev                     IN      AAAA    fddf:bf7:80::222:2
 
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::128:1
+
+;; NTP Service
+ntp0                    IN      AAAA    fddf:bf7:80::144:1
+ntp1                    IN      AAAA    fddf:bf7:80::128:1
+ntp2                    IN      AAAA    fddf:bf7:80::48:1
+ntp3                    IN      AAAA    fddf:bf7:80::64:1
+ntp4                    IN      AAAA    fddf:bf7:80::208:1
 
 ;; FF Map
 map                     IN      AAAA    fddf:0bf7:80::128:1
