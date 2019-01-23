@@ -21,7 +21,7 @@ www                     IN      A       46.4.149.26
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80::128:1
-fw                      IN      AAAA    fddf:0bf7:80::128:1
+fw                      IN      AAAA    fddf:bf7:80::222:2
 
 ;; firmware dev - grotax
 dev                     IN      AAAA    fddf:bf7:80::222:2
