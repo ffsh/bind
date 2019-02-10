@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
 @       IN      SOA     ns1.wollgast-it.de. info.freifunk-lauenburg.de. (
-                     2018071501         ; Serial
+                     2019020700         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -20,10 +20,6 @@ $ORIGIN freifunk-lauenburg.de.
 www                     IN      A       10.144.128.1
 www                     IN      AAAA    fddf:bf7:80::128:1
 
-;; Update
-firmware                IN      A       10.144.128.1
-firmware                IN      AAAA    fddf:0bf7:80::128:1
-
 ;; NTP Service
 ntp                     IN      A       10.144.128.1
 ntp                     IN      AAAA    fddf:0bf7:80::128:1
@@ -38,21 +34,11 @@ node                    CNAME           knoten
 next                    CNAME           knoten
 router                  CNAME           knoten
 
-;;Mail
-;;mail                  IN      A       88.198.243.188
-;;                      IN      MX  10  mail.freifunk-lauenburg.de.
-
 ;; Gateways
 barnitz                 IN      A       195.201.117.146
 beste                   IN      A       88.99.35.208
-;;bille                 IN      A       1.2.3.4
-;;brunsbach             IN      A       1.2.3.4
-;;heilsau               IN      A       1.2.3.4
 hopfenbach              IN      A       176.9.83.62
 krummbach               IN      A       46.4.149.24
-;;piepenbek             IN      A       1.2.3.4
-;;strusbek              IN      A       1.2.3.4
-;;syslbek               IN      A       1.2.3.4
 trave                   IN      A       88.99.86.15
 viehbach                IN      A       46.4.149.25
 
