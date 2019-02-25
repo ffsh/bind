@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2019020700         ; Serial
+                     2019022500         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -14,10 +14,10 @@ $ORIGIN freifunk-suedholstein.de.
                         IN      NS      feuerschiff.leichsenring.net.
                         IN      NS      ns1.wollgast-it.de.
                         IN      MX  10  freifunk-suedholstein.de.
-                        IN      A       46.4.149.26
-                        IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
-www                     IN      A       46.4.149.26
-                        IN      AAAA    2a01:4f8:120:3206:b19:fa7:cafe:26
+                        IN      A       195.201.90.238
+                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
+www                     IN      A       195.201.90.238
+                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
 
 ;; Update and Firmware Repo
 firmware                IN      AAAA    fddf:bf7:80::128:1
