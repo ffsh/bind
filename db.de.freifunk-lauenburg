@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
 @       IN      SOA     ns1.wollgast-it.de. info.freifunk-lauenburg.de. (
-                     2019020700         ; Serial
+                     2019022500         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -38,9 +38,8 @@ router                  CNAME           knoten
 barnitz                 IN      A       195.201.117.146
 beste                   IN      A       88.99.35.208
 hopfenbach              IN      A       176.9.83.62
-krummbach               IN      A       46.4.149.24
+krummbach               IN      A       159.69.120.186
 trave                   IN      A       88.99.86.15
-viehbach                IN      A       46.4.149.25
 
 
 ;; all other
