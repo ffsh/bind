@@ -42,7 +42,10 @@ map                     IN      AAAA    fddf:0bf7:80::128:1
 ;; Tiles
 tiles                   IN      AAAA    fddf:0bf7:80::128:1
                         IN      A       10.144.128.1
-
+;; status               
+status                  IN      AAAA    2a01:4f8:162:6312::2
+                        IN      A       5.9.118.86
+                        
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
