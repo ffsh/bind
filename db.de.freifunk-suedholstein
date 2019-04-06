@@ -45,7 +45,10 @@ tiles                   IN      AAAA    fddf:0bf7:80::128:1
 ;; status               
 status                  IN      AAAA    2a01:4f8:162:6312::2
                         IN      A       5.9.118.86
-                        
+;; stats (Munin), external IP for now
+stats                   IN      AAAA    2a01:4f8:1c17:44d1::1
+                        IN      A       159.69.191.196
+
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
