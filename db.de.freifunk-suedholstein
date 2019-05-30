@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2019022501         ; Serial
+                     2019053000         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -37,12 +37,12 @@ ntp5                    IN      AAAA    fddf:bf7:80::160:1
 
 
 ;; FF Map
-map                     IN      AAAA    fddf:0bf7:80::128:1
-                        IN      A       10.144.128.1
+map                     IN      AAAA    fddf:0bf7:80::333:3
+                        IN      A       10.144.3.3
 
 ;; Tiles
-tiles                   IN      AAAA    fddf:0bf7:80::128:1
-                        IN      A       10.144.128.1
+tiles                   IN      AAAA    fddf:0bf7:80::333:3
+                        IN      A       10.144.3.3
 ;; status               
 status                  IN      AAAA    2a01:4f8:162:6312::2
                         IN      A       5.9.118.86
