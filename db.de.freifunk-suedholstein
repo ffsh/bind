@@ -43,6 +43,9 @@ map                     IN      AAAA    fddf:0bf7:80::333:3
 ;; Tiles
 tiles                   IN      AAAA    fddf:0bf7:80::333:3
                         IN      A       10.144.3.3
+;; Tiles
+grafana                 IN      AAAA    fddf:0bf7:80::333:3
+                        IN      A       10.144.3.3
 ;; status               
 status                  IN      AAAA    2a01:4f8:162:6312::2
                         IN      A       5.9.118.86
