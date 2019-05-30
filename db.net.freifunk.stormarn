@@ -20,10 +20,6 @@ www                     IN      A       46.4.149.30
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::144:1
 
-;; FF Map
-map                     IN      AAAA    fddf:bf7:80::144:1
-                        IN      A       10.144.144.1
-
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
