@@ -24,10 +24,6 @@ www                     IN      AAAA    fddf:bf7:80::128:1
 ntp                     IN      A       10.144.128.1
 ntp                     IN      AAAA    fddf:0bf7:80::128:1
 
-;; FF Map
-map                     IN      A       10.144.128.1
-map                     IN      AAAA    fddf:0bf7:80::128:1
-
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
