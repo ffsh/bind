@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN lauenburg.freifunk.net.
 @       IN      SOA     lauenburg.freifunk.net. info.lauenburg.freifunk.net. (
-                     2019022500         ; Serial
+                     2019060200         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -27,18 +27,3 @@ knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
 next                    CNAME           knoten
 router                  CNAME           knoten
-
-;; Mail
-mail                    IN      A       176.9.83.61
-@                       IN      MX  10  mail.lauenburg.freifunk.net.
-
-;; Gateways
-barnitz                 IN      A       195.201.117.146
-beste                   IN      A       88.99.35.208
-hopfenbach              IN      A       176.9.83.62
-krummbach               IN      A       159.69.120.186
-trave                   IN      A       88.99.86.15
-
-;; Eigene bzw Individuelle Dienste
-$ORIGIN mein.lauenburg.freifunk.net.
-;;beispiel              IN      A       10.144.1.3

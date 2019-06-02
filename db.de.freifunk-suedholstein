@@ -19,22 +19,46 @@ $ORIGIN freifunk-suedholstein.de.
 www                     IN      A       195.201.90.238
                         IN      AAAA    2a01:4f8:1c1c:c6dc::1
 
-;; Update and Firmware Repo
+;; Firmware -----------------------------------------------
 firmware                IN      AAAA    fddf:bf7:80::128:1
-;; firmware dev - grotax
+;; Krummbach
+firmware                IN      AAAA    fddf:bf7:80::144:1
+;; Hopfenbach
+firmware                IN      AAAA    fddf:bf7:80::128:1
+;; Barnitz
+firmware                IN      AAAA    fddf:bf7:80::48:1
+;; Beste
+firmware                IN      AAAA    fddf:bf7:80::64:1
+;; Trave
+firmware                IN      AAAA    fddf:bf7:80::208:1
+;; Piepenbek
+firmware                IN      AAAA    fddf:bf7:80::160:1
+;; Heilsau
+firmware                IN      AAAA    fddf:bf7:80::112:1
+;; /Firmware ----------------------------------------------
+
+;; Developer Firmware
 dev                     IN      AAAA    fddf:bf7:80::222:2
 
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::144:1
 
-;; NTP Service
+;; NTP Service ---------------------------------------------
+;; Krummbach
 ntp0                    IN      AAAA    fddf:bf7:80::144:1
+;; Hopfenbach
 ntp1                    IN      AAAA    fddf:bf7:80::128:1
+;; Barnitz
 ntp2                    IN      AAAA    fddf:bf7:80::48:1
+;; Beste
 ntp3                    IN      AAAA    fddf:bf7:80::64:1
+;; Trave
 ntp4                    IN      AAAA    fddf:bf7:80::208:1
+;; Piepenbek
 ntp5                    IN      AAAA    fddf:bf7:80::160:1
-
+;; Heilsau
+ntp6                    IN      AAAA    fddf:bf7:80::112:1
+;; /NTP Service ---------------------------------------------
 
 ;; FF Map
 map                     IN      AAAA    fddf:0bf7:80::333:3
@@ -46,10 +70,12 @@ tiles                   IN      AAAA    fddf:0bf7:80::333:3
 ;; Tiles
 grafana                 IN      AAAA    fddf:0bf7:80::333:3
                         IN      A       10.144.3.3
-;; status               
+
+;; Incident Page
 status                  IN      AAAA    2a01:4f8:162:6312::2
                         IN      A       5.9.118.86
-;; stats (Munin), external IP for now
+
+;; Status Page Munin
 stats                   IN      AAAA    2a01:4f8:1c17:44d1::1
                         IN      A       159.69.191.196
 
@@ -73,4 +99,3 @@ piepenbek               IN      A       95.216.213.233
 ;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
 ;;$ORIGIN freifunk-suedholstein.de.
 ;;media                IN      AAAA       fddf:0bf7:80::a38:1
-
