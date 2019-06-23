@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2019053000         ; Serial
+                     2019062300         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,32 +13,20 @@ $ORIGIN freifunk-suedholstein.de.
 @                       IN      NS      ns1.jebens.it.
                         IN      NS      feuerschiff.leichsenring.net.
                         IN      NS      ns1.wollgast-it.de.
-                        IN      MX  10  freifunk-suedholstein.de.
-                        IN      A       195.201.90.238
-                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
-www                     IN      A       195.201.90.238
-                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
+                        IN      MX  10  mail.freifunk-suedholstein.de.
+                        IN      A       116.203.27.68
+                        IN      AAAA    2a01:4f8:c2c:143e::1
+www                     IN      A       116.203.27.68
+                        IN      AAAA    2a01:4f8:c2c:143e::1
 
-;; Firmware -----------------------------------------------
-firmware                IN      AAAA    fddf:bf7:80::128:1
-;; Krummbach
-firmware                IN      AAAA    fddf:bf7:80::144:1
-;; Hopfenbach
-firmware                IN      AAAA    fddf:bf7:80::128:1
-;; Barnitz
-firmware                IN      AAAA    fddf:bf7:80::48:1
-;; Beste
-firmware                IN      AAAA    fddf:bf7:80::64:1
-;; Trave
-firmware                IN      AAAA    fddf:bf7:80::208:1
-;; Piepenbek
-firmware                IN      AAAA    fddf:bf7:80::160:1
-;; Heilsau
-firmware                IN      AAAA    fddf:bf7:80::112:1
-;; /Firmware ----------------------------------------------
-
-;; Developer Firmware
-dev                     IN      AAAA    fddf:bf7:80::222:2
+;; Gateways
+barnitz                 IN      A       195.201.117.146
+beste                   IN      A       88.99.35.208
+hopfenbach              IN      A       176.9.83.62
+krummbach               IN      A       159.69.120.186
+trave                   IN      A       88.99.86.15
+heilsau                 IN      A       95.216.157.253
+piepenbek               IN      A       95.216.213.233
 
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::144:1
@@ -60,10 +48,17 @@ ntp5                    IN      AAAA    fddf:bf7:80::160:1
 ntp6                    IN      AAAA    fddf:bf7:80::112:1
 ;; /NTP Service ---------------------------------------------
 
+;; Public DNS Master
+dns                     IN      A      116.203.153.15
+dns                     IN      AAAA   2a01:4f8:c2c:5caa::1
+
+;; Mail Server
+mail                    IN      A      159.69.248.251
+mail                    IN      AAAA   2a01:4f8:c010:1f0f::1
+
 ;; FF Map
 map                     IN      AAAA    fddf:0bf7:80::333:3
                         IN      A       10.144.3.3
-
 ;; Tiles
 tiles                   IN      AAAA    fddf:0bf7:80::333:3
                         IN      A       10.144.3.3
@@ -86,14 +81,28 @@ node                    CNAME           knoten
 ;; Docs
 docs                    IN      CNAME   readthedocs.io.
 
-;; Gateways
-barnitz                 IN      A       195.201.117.146
-beste                   IN      A       88.99.35.208
-hopfenbach              IN      A       176.9.83.62
-krummbach               IN      A       159.69.120.186
-trave                   IN      A       88.99.86.15
-heilsau                 IN      A       95.216.157.253
-piepenbek               IN      A       95.216.213.233
+
+
+;; Firmware -----------------------------------------------
+firmware                IN      AAAA    fddf:bf7:80::128:1
+;; Krummbach
+firmware                IN      AAAA    fddf:bf7:80::144:1
+;; Hopfenbach
+firmware                IN      AAAA    fddf:bf7:80::128:1
+;; Barnitz
+firmware                IN      AAAA    fddf:bf7:80::48:1
+;; Beste
+firmware                IN      AAAA    fddf:bf7:80::64:1
+;; Trave
+firmware                IN      AAAA    fddf:bf7:80::208:1
+;; Piepenbek
+firmware                IN      AAAA    fddf:bf7:80::160:1
+;; Heilsau
+firmware                IN      AAAA    fddf:bf7:80::112:1
+;; /Firmware ----------------------------------------------
+
+;; Developer Firmware
+dev                     IN      AAAA    fddf:bf7:80::222:2
 
 ;; all other
 ;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
