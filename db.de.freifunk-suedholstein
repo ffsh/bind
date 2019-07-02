@@ -22,7 +22,6 @@ www                     IN      A       116.203.27.68
 ;; Gateways
 barnitz                 IN      A       195.201.117.146
 beste                   IN      A       88.99.35.208
-hopfenbach              IN      A       176.9.83.62
 krummbach               IN      A       159.69.120.186
 trave                   IN      A       88.99.86.15
 heilsau                 IN      A       95.216.157.253
@@ -34,8 +33,6 @@ ntp                     IN      AAAA    fddf:bf7:80::144:1
 ;; NTP Service ---------------------------------------------
 ;; Krummbach
 ntp0                    IN      AAAA    fddf:bf7:80::144:1
-;; Hopfenbach
-ntp1                    IN      AAAA    fddf:bf7:80::128:1
 ;; Barnitz
 ntp2                    IN      AAAA    fddf:bf7:80::48:1
 ;; Beste
@@ -84,11 +81,8 @@ docs                    IN      CNAME   readthedocs.io.
 
 
 ;; Firmware -----------------------------------------------
-firmware                IN      AAAA    fddf:bf7:80::128:1
 ;; Krummbach
 firmware                IN      AAAA    fddf:bf7:80::144:1
-;; Hopfenbach
-firmware                IN      AAAA    fddf:bf7:80::128:1
 ;; Barnitz
 firmware                IN      AAAA    fddf:bf7:80::48:1
 ;; Beste
