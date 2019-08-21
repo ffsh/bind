@@ -12,9 +12,9 @@ $ORIGIN stormarn.freifunk.net.
 
 @                       IN      NS      ns3.nsentry.de.
                         IN      NS      ns4.nsentry.de.
-                        IN      MX      10 tux.tuks.in.
-                        IN      A       46.4.149.30
-www                     IN      A       46.4.149.30
+                        IN      MX      10 mail.freifunk-suedholstein.de.
+                        IN      A       116.203.123.102
+www                     IN      A       116.203.123.102
 
 
 ;; NTP Service
