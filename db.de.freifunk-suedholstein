@@ -95,6 +95,11 @@ firmware                IN      AAAA    fddf:bf7:80::160:1
 firmware                IN      AAAA    fddf:bf7:80::112:1
 ;; /Firmware ----------------------------------------------
 
+;; Install ------------------------------------------------
+install                 IN      CNAME   firmware
+;; /Install -----------------------------------------------
+
+
 ;; Developer Firmware
 dev                     IN      AAAA    fddf:bf7:80::222:2
 
