@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2019060200         ; Serial
+                     2019111100         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -20,22 +20,12 @@ www                     IN      A       195.201.90.238
                         IN      AAAA    2a01:4f8:1c1c:c6dc::1
 
 ;; Firmware -----------------------------------------------
-;; Krummbach
-fw                      IN      AAAA    fddf:bf7:80::144:1
-;; Barnitz
-fw                      IN      AAAA    fddf:bf7:80::48:1
-;; Beste
-fw                      IN      AAAA    fddf:bf7:80::64:1
-;; Trave
-fw                      IN      AAAA    fddf:bf7:80::208:1
-;; Piepenbek
-fw                      IN      AAAA    fddf:bf7:80::160:1
-;; Heilsau
-fw                      IN      AAAA    fddf:bf7:80::112:1
-;; /Firmware ----------------------------------------------
+firmware                IN      AAAA    2a01:4f8:c2c:143e::1
+firmware                IN      A       116.203.27.68
 
-;; Developer Firmware
-dev                     IN      AAAA    fddf:bf7:80::222:2
+;; Install ------------------------------------------------
+install                 IN      A       116.203.27.68
+install                 IN      AAAA    2a01:4f8:c2c:143e::1
 
 ;; NTP Service
 ntp                     IN      AAAA    fddf:bf7:80::144:1

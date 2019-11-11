@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2019110802         ; Serial
+                     2019111100         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -78,32 +78,13 @@ node                    CNAME           knoten
 ;; Docs
 docs                    IN      CNAME   readthedocs.io.
 
-
-
 ;; Firmware -----------------------------------------------
-;; Krummbach
-firmware                IN      AAAA    fddf:bf7:80::144:1
-;; Barnitz
-firmware                IN      AAAA    fddf:bf7:80::48:1
-;; Beste
-firmware                IN      AAAA    fddf:bf7:80::64:1
-;; Trave
-firmware                IN      AAAA    fddf:bf7:80::208:1
-;; Piepenbek
-firmware                IN      AAAA    fddf:bf7:80::160:1
-;; Heilsau
-firmware                IN      AAAA    fddf:bf7:80::112:1
-;; /Firmware ----------------------------------------------
+firmware                IN      AAAA    2a01:4f8:c2c:143e::1
+firmware                IN      A       116.203.27.68
 
 ;; Install ------------------------------------------------
-;; deactivated since it is not the final solution
-;;install                 IN      A       116.203.27.68
-;;install                 IN      AAAA    2a01:4f8:c2c:143e::1
-;; /Install -----------------------------------------------
-
-
-;; Developer Firmware
-dev                     IN      AAAA    fddf:bf7:80::222:2
+install                 IN      A       116.203.27.68
+install                 IN      AAAA    2a01:4f8:c2c:143e::1
 
 ;; all other
 ;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
