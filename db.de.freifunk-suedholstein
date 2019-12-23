@@ -79,7 +79,7 @@ node                    CNAME           knoten
 docs                    IN      CNAME   readthedocs.io.
 
 ;; Firmware -----------------------------------------------
-firmware                IN      AAAA    2a01:4f8:c2c:143e::1
+firmware                IN      AAAA    fddf:bf7:80::222:1
 firmware                IN      A       116.203.27.68
 
 ;; Install ------------------------------------------------
