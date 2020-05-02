@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2019111100         ; Serial
+                     2020050200         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -22,7 +22,10 @@ www                     IN      A       116.203.27.68
 ;; Gateways
 barnitz                 IN      A       195.201.117.146
 beste                   IN      A       88.99.35.208
+bille                   IN      A       5.181.50.231
 krummbach               IN      A       159.69.120.186
+sylsbek                 IN      A       195.128.103.225
+syslbek                 IN      CNAME   sylsbek
 trave                   IN      A       88.99.86.15
 heilsau                 IN      A       95.216.157.253
 piepenbek               IN      A       95.216.213.233
