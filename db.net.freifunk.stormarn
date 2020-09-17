@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2019060200         ; Serial
+                     2020091700         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,8 +13,10 @@ $ORIGIN stormarn.freifunk.net.
 @                       IN      NS      ns3.nsentry.de.
                         IN      NS      ns4.nsentry.de.
                         IN      MX      10 mail.freifunk-suedholstein.de.
-                        IN      A       116.203.123.102
-www                     IN      A       116.203.123.102
+                        IN      A       116.203.27.68
+                        IN      AAAA    2a01:4f8:c2c:143e::1
+www                     IN      A       116.203.27.68
+                        IN      AAAA    2a01:4f8:c2c:143e::1
 
 
 ;; NTP Service
