@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2021061000         ; Serial
+                     2021061001         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -28,3 +28,5 @@ router                  CNAME           knoten
 ;; Honeypot -----------------------------------------------
 firmware                IN      AAAA    fddf:bf7:80::222:1
 firmware                IN      A       116.203.27.68
+update                  IN      AAAA    fddf:bf7:80::222:1
+update                  IN      A       116.203.27.68

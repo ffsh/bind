@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
 @       IN      SOA     ns1.wollgast-it.de. info.freifunk-lauenburg.de. (
-                     2021061000         ; Serial
+                     2021061001         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -22,3 +22,7 @@ knoten                  IN      AAAA    fddf:0bf7:80::a38:1
 node                    CNAME           knoten
 next                    CNAME           knoten
 router                  CNAME           knoten
+
+;; Honeypot -----------------------------------------------
+firmware                IN      AAAA    fddf:bf7:80::222:1
+firmware                IN      A       116.203.27.68
