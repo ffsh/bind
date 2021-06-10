@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN lauenburg.freifunk.net.
 @       IN      SOA     lauenburg.freifunk.net. info.lauenburg.freifunk.net. (
-                     2019060200         ; Serial
+                     2021061000         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,6 +13,9 @@ $ORIGIN lauenburg.freifunk.net.
 ;; Authorative Nameserver
 @                       IN      NS      ns1.wollgast-it.de.
 @                       IN      NS      ns0.wollgast-it.de.
+
+;; NTP Service
+ntp                     IN      AAAA    fddf:0bf7:80::48:1
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1
