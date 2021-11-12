@@ -39,8 +39,8 @@ ntp2                    IN      AAAA    fddf:bf7:80::48:1
 ntp3                    IN      AAAA    fddf:bf7:80::64:1
 ;; Trave
 ntp4                    IN      AAAA    fddf:bf7:80::208:1
-;; Piepenbek
-ntp5                    IN      AAAA    fddf:bf7:80::160:1
+;; Brunsbach
+ntp5                    IN      AAAA    fddf:bf7:80::96:1
 ;; Heilsau
 ntp6                    IN      AAAA    fddf:bf7:80::112:1
 ;; /NTP Service ---------------------------------------------
