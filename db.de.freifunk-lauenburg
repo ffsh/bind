@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-lauenburg.de.
 @       IN      SOA     ns1.wollgast-it.de. info.freifunk-lauenburg.de. (
-                     2021061001         ; Serial
+                     2022061400         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -15,7 +15,7 @@ $ORIGIN freifunk-lauenburg.de.
                         IN      NS      ns0.wollgast-it.de.
 
 ;; NTP Service
-ntp                     IN      AAAA    fddf:0bf7:80::48:1
+ntp                     IN      AAAA    fddf:0bf7:80::96:1
 
 ;; Knoten
 knoten                  IN      AAAA    fddf:0bf7:80::a38:1

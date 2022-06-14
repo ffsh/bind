@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2019111100         ; Serial
+                     2022061400         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -30,21 +30,23 @@ install                 IN      A       116.203.27.68
 install                 IN      AAAA    2a01:4f8:c2c:143e::1
 
 ;; NTP Service
-ntp                     IN      AAAA    fddf:bf7:80::144:1
+ntp                     IN      AAAA    fddf:0bf7:80::96:1
 
 ;; NTP Service ---------------------------------------------
-;; Krummbach
-ntp0                    IN      AAAA    fddf:bf7:80::144:1
-;; Barnitz
-ntp2                    IN      AAAA    fddf:bf7:80::48:1
-;; Beste
-ntp3                    IN      AAAA    fddf:bf7:80::64:1
-;; Trave
-ntp4                    IN      AAAA    fddf:bf7:80::208:1
 ;; Brunsbach
-ntp5                    IN      AAAA    fddf:bf7:80::96:1
+ntp0                    IN      AAAA    fddf:0bf7:80::96:1
+;; Barnitz
+ntp1                    IN      AAAA    fddf:bf7:80::48:1
+;; Beste
+ntp2                    IN      AAAA    fddf:bf7:80::64:1
+;; Trave
+ntp3                    IN      AAAA    fddf:bf7:80::208:1
+;; Bille
+ntp4                    IN      AAAA    fddf:0bf7:80::80:1
 ;; Heilsau
-ntp6                    IN      AAAA    fddf:bf7:80::112:1
+ntp5                    IN      AAAA    fddf:bf7:80::112:1
+;; Sylsbek
+ntp6                    IN      AAAA    fddf:0bf7:80::192:1
 ;; /NTP Service ---------------------------------------------
 
 ;; FF Map

@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-suedholstein.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-suedholstein.de. (
-                     2022022800         ; Serial
+                     2022061400         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -23,30 +23,30 @@ www                     IN      A       116.203.27.68
 barnitz                 IN      A       195.201.117.146
 beste                   IN      A       159.69.122.154
 bille                   IN      A       5.181.50.231
-krummbach               IN      A       159.69.120.186
 sylsbek                 IN      A       195.128.103.225
 syslbek                 IN      CNAME   sylsbek
 trave                   IN      A       88.99.86.15
 heilsau                 IN      A       95.216.157.253
-piepenbek               IN      A       95.216.213.233
 brunsbach               IN      A       37.221.192.238
 
 ;; NTP Service
-ntp                     IN      AAAA    fddf:bf7:80::144:1
+ntp                     IN      AAAA    fddf:0bf7:80::96:1
 
 ;; NTP Service ---------------------------------------------
-;; Krummbach
-ntp0                    IN      AAAA    fddf:bf7:80::144:1
+;; Brunsbach
+ntp0                    IN      AAAA    fddf:0bf7:80::96:1
 ;; Barnitz
-ntp2                    IN      AAAA    fddf:bf7:80::48:1
+ntp1                    IN      AAAA    fddf:bf7:80::48:1
 ;; Beste
-ntp3                    IN      AAAA    fddf:bf7:80::64:1
+ntp2                    IN      AAAA    fddf:bf7:80::64:1
 ;; Trave
-ntp4                    IN      AAAA    fddf:bf7:80::208:1
-;; Piepenbek
-ntp5                    IN      AAAA    fddf:bf7:80::160:1
+ntp3                    IN      AAAA    fddf:bf7:80::208:1
+;; Bille
+ntp4                    IN      AAAA    fddf:0bf7:80::80:1
 ;; Heilsau
-ntp6                    IN      AAAA    fddf:bf7:80::112:1
+ntp5                    IN      AAAA    fddf:bf7:80::112:1
+;; Sylsbek
+ntp6                    IN      AAAA    fddf:0bf7:80::192:1
 ;; /NTP Service ---------------------------------------------
 
 ;; Public DNS Master
