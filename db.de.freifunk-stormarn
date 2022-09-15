@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN freifunk-stormarn.de.
 @       IN      SOA     ns3.nsentry.de. info.freifunk-stormarn.de. (
-                     2022061400         ; Serial
+                     2022091500         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -31,3 +31,13 @@ firmware                IN      AAAA    fddf:bf7:80::222:1
 firmware                IN      A       116.203.27.68
 update                  IN      AAAA    fddf:bf7:80::222:1
 update                  IN      A       116.203.27.68
+
+;; Gateways
+barnitz                 IN      A       195.201.117.146
+beste                   IN      A       159.69.122.154
+bille                   IN      A       5.181.50.231
+sylsbek                 IN      A       195.128.103.225
+syslbek                 IN      CNAME   sylsbek
+trave                   IN      A       88.99.86.15
+heilsau                 IN      A       95.216.157.253
+brunsbach               IN      A       188.68.34.169

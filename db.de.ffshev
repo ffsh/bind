@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2022061400         ; Serial
+                     2022091500         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -77,11 +77,13 @@ docs                    IN      CNAME   readthedocs.io.
 
 ;; Gateways
 barnitz                 IN      A       195.201.117.146
-beste                   IN      A       88.99.35.208
-krummbach               IN      A       159.69.120.186
+beste                   IN      A       159.69.122.154
+bille                   IN      A       5.181.50.231
+sylsbek                 IN      A       195.128.103.225
+syslbek                 IN      CNAME   sylsbek
 trave                   IN      A       88.99.86.15
 heilsau                 IN      A       95.216.157.253
-piepenbek               IN      A       95.216.213.233
+brunsbach               IN      A       188.68.34.169
 
 ;; all other
 ;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
