@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN stormarn.freifunk.net.
 @       IN      SOA     ns3.nsentry.de. info.stormarn.freifunk.net. (
-                     2022091500         ; Serial
+                     2026051900         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -20,28 +20,21 @@ www                     IN      A       116.203.27.68
 
 
 ;; NTP Service
-ntp                     IN      AAAA    fddf:0bf7:80::96:1
+ntp                     IN      CNAME   ntp.freifunk-suedholstein.de.
 
 ;; Knoten
-knoten                  IN      AAAA    fddf:0bf7:80::a38:1
-node                    CNAME           knoten
-next                    CNAME           knoten
-router                  CNAME           knoten
+knoten                  IN      CNAME   knoten.freifunk-suedholstein.de.
+node                    CNAME           knoten.freifunk-suedholstein.de.
+next                    CNAME           knoten.freifunk-suedholstein.de.
+router                  CNAME           knoten.freifunk-suedholstein.de.
 
 ;; Honeypot -----------------------------------------------
-firmware                IN      AAAA    fddf:bf7:80::222:1
-firmware                IN      A       116.203.27.68
-update                  IN      AAAA    fddf:bf7:80::222:1
-update                  IN      A       116.203.27.68
-gluon                   IN      AAAA    fddf:bf7:80::222:1
-gluon                   IN      A       116.203.27.68
+firmware                IN      CNAME   firmware.freifunk-suedholstein.de.
+update                  IN      CNAME   firmware.freifunk-suedholstein.de.
+gluon                   IN      CNAME   firmware.freifunk-suedholstein.de.
 
 ;; Gateways
-barnitz                 IN      A       195.201.117.146
 beste                   IN      A       159.69.122.154
 bille                   IN      A       5.181.50.231
-sylsbek                 IN      A       195.128.103.225
-syslbek                 IN      CNAME   sylsbek
 trave                   IN      A       88.99.86.15
-heilsau                 IN      A       95.216.157.253
-brunsbach               IN      A       188.68.34.169
+brunsbach               IN      A       159.69.251.9
