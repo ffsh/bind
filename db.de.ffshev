@@ -4,7 +4,7 @@
 $TTL    900
 $ORIGIN ffshev.de.
 @       IN      SOA     ns3.nsentry.de. info.ffshev.de. (
-                     2022091500         ; Serial
+                     2026051900         ; Serial
                           28800         ; Refresh
                            7200         ; Retry
                          604800         ; Expire
@@ -13,79 +13,6 @@ $ORIGIN ffshev.de.
 @                       IN      NS      ns1.jebens.it.
                         IN      NS      feuerschiff.leichsenring.net.
                         IN      NS      ns2.wollgast-it.de.
-                        IN      MX  10  freifunk-suedholstein.de.
-                        IN      A       195.201.90.238
-                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
-www                     IN      A       195.201.90.238
-                        IN      AAAA    2a01:4f8:1c1c:c6dc::1
 
-;; Firmware -----------------------------------------------
-firmware                IN      AAAA    fddf:bf7:80::222:1
-firmware                IN      A       116.203.27.68
-fw                      IN      AAAA    fddf:bf7:80::222:1
-fw                      IN      A       116.203.27.68
-
-;; Install ------------------------------------------------
-install                 IN      A       116.203.27.68
-install                 IN      AAAA    2a01:4f8:c2c:143e::1
-
-;; NTP Service
-ntp                     IN      AAAA    fddf:0bf7:80::96:1
-
-;; NTP Service ---------------------------------------------
-;; Brunsbach
-ntp0                    IN      AAAA    fddf:0bf7:80::96:1
-;; Barnitz
-ntp1                    IN      AAAA    fddf:bf7:80::48:1
-;; Beste
-ntp2                    IN      AAAA    fddf:bf7:80::64:1
-;; Trave
-ntp3                    IN      AAAA    fddf:bf7:80::208:1
-;; Bille
-ntp4                    IN      AAAA    fddf:0bf7:80::80:1
-;; Heilsau
-ntp5                    IN      AAAA    fddf:bf7:80::112:1
-;; Sylsbek
-ntp6                    IN      AAAA    fddf:0bf7:80::192:1
-;; /NTP Service ---------------------------------------------
-
-;; FF Map
-map                     IN      AAAA    fddf:0bf7:80::333:3
-                        IN      A       10.144.3.3
-
-;; Tiles
-tiles                   IN      AAAA    fddf:0bf7:80::333:3
-                        IN      A       10.144.3.3
-;; Tiles
-grafana                 IN      AAAA    fddf:0bf7:80::333:3
-                        IN      A       10.144.3.3
-
-;; Incident Page
-status                  IN      AAAA    2a01:4f8:162:6312::2
-                        IN      A       5.9.118.86
-
-;; Status Page Munin
-stats                   IN      AAAA    2a01:4f8:1c17:44d1::1
-                        IN      A       159.69.191.196
-
-;; Knoten
-knoten                  IN      AAAA    fddf:0bf7:80::a38:1
-node                    CNAME           knoten
-
-;; Docs
-docs                    IN      CNAME   readthedocs.io.
-
-;; Gateways
-barnitz                 IN      A       195.201.117.146
-beste                   IN      A       159.69.122.154
-bille                   IN      A       5.181.50.231
-sylsbek                 IN      A       195.128.103.225
-syslbek                 IN      CNAME   sylsbek
-trave                   IN      A       88.99.86.15
-heilsau                 IN      A       95.216.157.253
-brunsbach               IN      A       188.68.34.169
-
-;; all other
-;; Eigene bzw Individuelle Dienste IPv6 ONLY!!!
-;;$ORIGIN freifunk-suedholstein.de.
-;;media                IN      AAAA       fddf:0bf7:80::a38:1
+;; Domain no longer operated here.
+;; Keep only authority metadata to avoid serving stale technical data.
